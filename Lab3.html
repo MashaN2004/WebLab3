@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet"  href="static/style/styles.css">
+    <title>lab3</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+
+      }
+      body{
+        background-color: white;
+        height: 100%;
+      }
+      .container{
+        display: flex;
+        flex-direction: column;
+        min-height: 100vh;
+        font-family: Arial, sans-serif; 
+      }
+      main{
+        display: flex;
+        justify-content: center;
+        flex-grow: 1;
+      }
+      .navigator{
+        display: flex;
+        background-color: red;
+        min-width: 200px;
+        max-width: 200px;
+        justify-content: center;
+          
+      }
+      .navtext{
+        margin-top: 10px;
+        width: 70%;
+        display: flex;
+        flex-direction: column;
+        font-size: 0.9em;
+        margin-left: 15px;  
+      }
+      a{
+        text-align:justify;
+        margin-top: 15px;
+        color: white;
+      }
+      a:hover {
+        background-color: green;
+      }
+      .text{
+        width: 30vw;
+        margin: 25px;
+      }
+      header{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: green;
+        height: 50px;
+        color: white;
+      }
+      footer{
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          background-color: black;
+          height: 50px;
+          margin-top: auto;
+          color: white;
+          font-size: 0.8em;
+      }
+      p{
+        text-align:justify;
+      }
+      p::selection{
+        background-color: green;
+        color: white;
+      }
+
+      p::first-letter {
+        font-size: 1.2em; 
+        color: red; 
+      }
+
+      @media (max-width: 1000px){
+        main{
+            justify-content: flex-start; 
+            padding-left: 0; 
+        }
+
+        .text{
+            width: auto;
+            margin: 15px;
+        }
+
+        .linkk{  
+            min-width: 200px;
+            max-width: 25%;
+        }
+      }
+    </style>
+</head>
+
+<body>
+  <div class="container">
+    <header>
+      Header
+    </header>
+
+    <main>
+        <aside class="navigator">
+            <div class="navtext">
+              <a href=""> Main page</a>
+              <a href=""> Secondary page</a>
+              <a href=""> Some other page</a>
+              <a href=""> More pages to the god of pages</a>
+              <a href=""> The last page</a>
+            </div>
+        </aside>
+
+        <section class="text">
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione eos iusto provident nihil, laboriosam
+              esse ab minima est, in sit enim officia sunt sapiente vitae illo, dolorem! Sint debitis nesciunt ducimus
+              ab magnam necessitatibus asperiores enim voluptate, dolores reiciendis iure. Nisi odio in consectetur
+              inventore enim quasi ipsam velit eius eligendi quis eaque iusto suscipit quod accusamus temporibus
+              molestiae, facere, laborum quos, rem repellat earum error expedita consequatur. Illum eos, debitis
+              distinctio porro maiores velit quia accusantium quae voluptatem quidem minima, facilis impedit ut. Odio
+              praesentium ea itaque voluptates numquam consectetur temporibus facilis qui magni velit laborum dicta
+              earum beatae laudantium voluptatem sed deleniti dolores alias atque, repudiandae unde. Mollitia
+              molestiae dolore tenetur, rem illum eveniet ratione, laboriosam repudiandae inventore expedita veniam
+              asperiores non excepturi suscipit quod corrupti. Laborum debitis eveniet maxime vitae aliquid nulla sit
+              fugiat voluptatem, soluta laudantium ad voluptatum in vel non sequi labore. Culpa autem, corporis, nobis
+              cupiditate laboriosam numquam, itaque natus aperiam ut deserunt adipisci magni debitis fugit eum
+              temporibus voluptatum ipsam rem commodi. Autem aliquam dolorem earum. Beatae reiciendis incidunt
+              molestiae soluta earum, expedita odit tempora vel eveniet provident ab aut vero dolor assumenda, minus
+              quia saepe nulla a id. Quia corrupti, non velit!
+            </p>
+        </section>
+    </main>
+
+    <footer>
+      Footer
+    </footer>
+</div>
+</body>
+
+</html>
